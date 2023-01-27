@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form | Home</title>
+    <style>
+        body{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <form style="text-align: center;" enctype="multipart/form-data">
+        <div>
+        Name:<input type="text" name="name" placeholder="Name" size="30" maxlength="20" minlength="6" required autofocus autocomplete="on"> <br> <br>
+        <!-- readonly, disabled  -->
+        <!-- size attributes tells us about how many characters we can able to see in input box -->
+        <!-- size defines Visibleness of character -->
+        <!-- Maxlength defines maximum how many characters can be inserted -->
+        <!-- required attributes tells browser that the given fiels is necesserily filled by user -->
+        </div>
+        <!-- In input tag name of the tag is provided because when we store form in server then server store the tag according 
+        to the tag "name" -->
+       <div>
+       Submit Button:<input type="Submit" value="Go" >  <br> <br>
+       </div>
+     
+       <div>
+       Colour: <input type="color" name="" id=""><br><br>
+       </div>
+       <div>
+        Date: <input type="date" name="" id=""><br><br>
+       </div>
+      <div>
+        Email: <input type="email" name="" id=""><br><br>
+      </div>
+
+      <div>
+        Hidden: <input type="hidden" name="" value="Delhi"  id=""><br><br>
+      </div>
+      <div>
+        Reset: <input type="reset" name="" value="Reset" id=""><br><br>
+      </div>
+      <div>
+        Time:<input type="time" name="time" value="time" id=""><br><br>
+      </div>
+      <div>
+        Choose File:<input type="file" multiple><br><br>
+      </div>
+
+      <div>
+        Range:<input type="range" name="" value="" id="" min="0" max="100"><br><br>
+      </div>
+      <div>
+        Number:<input type="number" name="" value="1" id="" max="20" min="5" step="2"><br><br>
+        <!-- how many step reqired to increase number  -->
+      </div>
+
+      <div>
+        Address: <textarea name="address" id="" cols="50" rows="20"  >Hello </textarea>
+      </div>
+
+
+
+      <!-- when input type is image then it become same as input button -->
+    
+        <input type="image" src="data:image/png;base64,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" width="100" >
+      
+    </form>
+</body>
+</html>
